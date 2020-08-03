@@ -17,6 +17,7 @@ public:
 };
 template <class T>
 List{
+    ListNode<T> *first, *last;
     List(){
         first=new ListNode<T>;
         last=first;
