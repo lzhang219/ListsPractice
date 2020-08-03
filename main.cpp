@@ -10,6 +10,5 @@ int main() {
         cout << n.getElement(i) << ' ';
     }
     cout<<endl;
-    cout<<"Test"<<endl;
     return 0;
 }
