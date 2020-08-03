@@ -32,8 +32,8 @@ struct List {
     ListNode<T> *first, *last;
 
     List() {
-        first = new ListNode<T>;
-        last = first;
+        first = nullptr;
+        last = nullptr;
     }
 
     List(T t, int length) {
@@ -50,9 +50,20 @@ struct List {
     ~List() {
         delete first;
     }
-
+    T getElement(size_t i)
+    {
+        auto p=first;
+        for (int j = 0; j < i; ++j) {
+            p=p->next;
+        }
+        return p->key;
+    }
     void InsElementFront(T t) {
         auto current = new ListNode<T>(t);
+        if(first==nullptr)
+        {
+            last=current;
+        }
         current->next = first;
         first = current;
     }
@@ -62,6 +73,12 @@ struct List {
     }
     void InsElement(T t, size_t i)
     {
+        if(i==0)
+        {
+            InsElementFront(t);
+            return;
+        }
+        --i;
         auto current = first;
         for (size_t j = 0; j < i; ++j) {
             current = current->next;
@@ -70,7 +87,16 @@ struct List {
         current->next=new ListNode<T>(t);
         current->next->next=originalnext;
     }
-
+    size_t size(){
+        size_t size=0;
+        auto p = first;
+        while(p!=nullptr)
+        {
+            p=p->next;
+            ++size;
+        }
+        return size;
+    }
     void modElement(T t, size_t i) {
         if (!i) {
             first->key = t;
