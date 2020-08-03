@@ -1,8 +1,8 @@
 #include <iostream>
-#include "list.h"
+#include "sllist.h"
 using namespace std;
 int main() {
-    List<int> n(20, 50);
+    SLList<int> n(20, 50);
     n.modElement(30,1);
     n.InsElement(40,4);
     n.removeElement(23);
