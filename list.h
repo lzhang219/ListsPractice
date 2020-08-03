@@ -60,8 +60,18 @@ struct List {
     void InsElementEnd(T t) {
         last = last->next = new ListNode<T>(t);
     }
+    void InsElement(T t, size_t i)
+    {
+        auto * current = first;
+        for (size_t j = 0; j < i; ++j) {
+            current = current->next;
+        }
+        auto * originalnext = current->next;
+        current->next=new ListNode<T>(t);
+        current->next->next=originalnext;
+    }
 
-    void modElement(int i, T t) {
+    void modElement(T t, size_t i) {
         if (!i) {
             first->key = t;
             return;
