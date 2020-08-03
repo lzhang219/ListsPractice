@@ -5,7 +5,6 @@
 #ifndef LISTSPRACTICE_LIST_H
 #define LISTSPRACTICE_LIST_H
 
-
 template<class T>
 struct SLListNode {
 public:
@@ -50,7 +49,7 @@ struct SLList {
     ~SLList() {
         delete first;
     }
-    T getElement(size_t i)
+    T getElement(unsigned int i)
     {
         auto p=first;
         for (int j = 0; j < i; ++j) {
@@ -71,7 +70,7 @@ struct SLList {
     void InsElementEnd(T t) {
         last = last->next = new SLListNode<T>(t);
     }
-    void InsElement(T t, size_t i)
+    void InsElement(T t, unsigned int i)
     {
         if(i==0)
         {
@@ -80,15 +79,15 @@ struct SLList {
         }
         --i;
         auto current = first;
-        for (size_t j = 0; j < i; ++j) {
+        for (unsigned int j = 0; j < i; ++j) {
             current = current->next;
         }
         auto originalnext = current->next;
         current->next=new SLListNode<T>(t);
         current->next->next=originalnext;
     }
-    size_t size(){
-        size_t size=0;
+    unsigned int size(){
+        unsigned int size=0;
         auto p = first;
         while(p!=nullptr)
         {
@@ -97,7 +96,7 @@ struct SLList {
         }
         return size;
     }
-    void modElement(T t, size_t i) {
+    void modElement(T t, unsigned int i) {
         if (!i) {
             first->key = t;
             return;
@@ -108,7 +107,7 @@ struct SLList {
         }
         current->key = t;
     }
-    void removeElement(size_t i){
+    void removeElement(unsigned int i){
         if(!i)
         {
             auto p = first;
@@ -129,4 +128,4 @@ struct SLList {
     }
 };
 
-#endif //SLListSPRACTICE_SLList_H
+#endif //LISTSPRACTICE_SLLIST_H
