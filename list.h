@@ -7,20 +7,20 @@
 
 
 template<class T>
-struct ListNode {
+struct SLListNode {
 public:
     T key;
-    ListNode *next;
+    SLListNode *next;
 
-    ListNode() {
+    SLListNode() {
         next = nullptr;
     }
 
-    explicit ListNode(T key) : key(key) {next=nullptr;}
+    explicit SLListNode(T key) : key(key) {next=nullptr;}
 
-    ListNode(T key, ListNode *next) : key(key), next(next) {}
+    SLListNode(T key, SLListNode *next) : key(key), next(next) {}
 
-    virtual ~ListNode() {
+    virtual ~SLListNode() {
         if (next != nullptr) {
             delete next;
         }
@@ -28,26 +28,26 @@ public:
 };
 
 template<class T>
-struct List {
-    ListNode<T> *first, *last;
+struct SLList {
+    SLListNode<T> *first, *last;
 
-    List() {
+    SLList() {
         first = nullptr;
         last = nullptr;
     }
 
-    List(T t, int length) {
-        first = new ListNode<T>(t);
+    SLList(T t, int length) {
+        first = new SLListNode<T>(t);
         auto current = first;
         --length;
         while (length--) {
-            current->next = new ListNode<T>(t);
+            current->next = new SLListNode<T>(t);
             current = current->next;
         }
         last = current;
     }
 
-    ~List() {
+    ~SLList() {
         delete first;
     }
     T getElement(size_t i)
@@ -59,7 +59,7 @@ struct List {
         return p->key;
     }
     void InsElementFront(T t) {
-        auto current = new ListNode<T>(t);
+        auto current = new SLListNode<T>(t);
         if(first==nullptr)
         {
             last=current;
@@ -69,7 +69,7 @@ struct List {
     }
 
     void InsElementEnd(T t) {
-        last = last->next = new ListNode<T>(t);
+        last = last->next = new SLListNode<T>(t);
     }
     void InsElement(T t, size_t i)
     {
@@ -84,7 +84,7 @@ struct List {
             current = current->next;
         }
         auto originalnext = current->next;
-        current->next=new ListNode<T>(t);
+        current->next=new SLListNode<T>(t);
         current->next->next=originalnext;
     }
     size_t size(){
@@ -121,7 +121,7 @@ struct List {
         for (int j = 0; j < i; ++j) {
             p=p->next;
         }
-        ListNode<T> *o;
+        SLListNode<T> *o;
         o = p->next;
         p->next=p->next->next;
         o->next=nullptr;
@@ -129,4 +129,4 @@ struct List {
     }
 };
 
-#endif //LISTSPRACTICE_LIST_H
+#endif //SLListSPRACTICE_SLList_H
