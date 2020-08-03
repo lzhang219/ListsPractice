@@ -16,7 +16,7 @@ public:
         next = nullptr;
     }
 
-    explicit ListNode(T key) : key(key) {}
+    explicit ListNode(T key) : key(key) {next=nullptr;}
 
     ListNode(T key, ListNode *next) : key(key), next(next) {}
 
@@ -36,9 +36,9 @@ struct List {
         last = first;
     }
 
-    List(int length, T t) {
+    List(T t, int length) {
         first = new ListNode<T>(t);
-        ListNode<T> *current = first;
+        auto current = first;
         --length;
         while (length--) {
             current->next = new ListNode<T>(t);
@@ -52,7 +52,7 @@ struct List {
     }
 
     void InsElementFront(T t) {
-        auto *current = new ListNode<T>(t);
+        auto current = new ListNode<T>(t);
         current->next = first;
         first = current;
     }
@@ -62,11 +62,11 @@ struct List {
     }
     void InsElement(T t, size_t i)
     {
-        auto * current = first;
+        auto current = first;
         for (size_t j = 0; j < i; ++j) {
             current = current->next;
         }
-        auto * originalnext = current->next;
+        auto originalnext = current->next;
         current->next=new ListNode<T>(t);
         current->next->next=originalnext;
     }
@@ -76,11 +76,30 @@ struct List {
             first->key = t;
             return;
         }
-        auto *current = first;
+        auto current = first;
         while (i--) {
             current = current->next;
         }
         current->key = t;
+    }
+    void removeElement(size_t i){
+        if(!i)
+        {
+            auto p = first;
+            first=first->next;
+            p->next = nullptr;
+            delete p;
+        }
+        --i;
+        auto p = first;
+        for (int j = 0; j < i; ++j) {
+            p=p->next;
+        }
+        ListNode<T> *o;
+        o = p->next;
+        p->next=p->next->next;
+        o->next=nullptr;
+        delete o;
     }
 };
 
