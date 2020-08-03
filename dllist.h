@@ -4,8 +4,10 @@
 
 #ifndef LISTSPRACTICE_DLLIST_H
 #define LISTSPRACTICE_DLLIST_H
+template<class T>
 struct DLListNode{
-
+    T key;
+    DLListNode<T> * previous, * next;
 };
 struct DLList{
 
