@@ -3,15 +3,143 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="ListsPractice" targetName="ListsPractice" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5563636-f13b-40a4-8ee1-a746abac7a63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ListsPractice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ListsPractice.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ListsPractice.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="t8pn2622" />
   </component>
+  <component name="ProjectId" id="1fbClsyUMM3QA5Dt5ROey4jrPDW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler />
+        <compiler-path />
+        <compiler-arguments />
+        <main-file />
+        <aux-dir />
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
+    <configuration name="ListsPractice" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ListsPractice" TARGET_NAME="ListsPractice" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ListsPractice" RUN_TARGET_NAME="ListsPractice">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program />
+        <main-file />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5563636-f13b-40a4-8ee1-a746abac7a63" name="Default Changelist" comment="" />
+      <created>1596477559454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596477559454</updated>
+      <workItem from="1596477561510" duration="3425000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="582" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1596478069768">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="582" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596478069768" />
+    <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1596477573541">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596477573541" />
+    <state x="673" y="328" key="Github.ShareDialog" timestamp="1596477608004">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="673" y="328" key="Github.ShareDialog/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596477608004" />
+    <state x="601" y="134" key="Github.UntrackedFilesDialog" timestamp="1596477619770">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="601" y="134" key="Github.UntrackedFilesDialog/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596477619770" />
+    <state width="1601" height="230" key="GridCell.Tab.0.bottom" timestamp="1596480884050">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1601" height="230" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596480884050" />
+    <state width="1601" height="230" key="GridCell.Tab.0.center" timestamp="1596480884049">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1601" height="230" key="GridCell.Tab.0.center/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596480884049" />
+    <state width="1601" height="230" key="GridCell.Tab.0.left" timestamp="1596480884049">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1601" height="230" key="GridCell.Tab.0.left/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596480884049" />
+    <state width="1601" height="230" key="GridCell.Tab.0.right" timestamp="1596480884050">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1601" height="230" key="GridCell.Tab.0.right/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596480884050" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1596477584234">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.-177.1920.1040@0.0.1600.860" timestamp="1596477584234" />
   </component>
 </project>
